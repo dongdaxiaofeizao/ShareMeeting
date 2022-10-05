@@ -1,0 +1,96 @@
+{
+	"pages": [
+		"projects/sharemeet/pages/default/index/default_index",
+		"projects/sharemeet/pages/about/index/about_index",
+		"projects/sharemeet/pages/search/search",
+		"projects/sharemeet/pages/my/index/my_index",
+		"projects/sharemeet/pages/my/reg/my_reg",
+		"projects/sharemeet/pages/my/edit/my_edit",
+		"projects/sharemeet/pages/my/foot/my_foot",
+		"projects/sharemeet/pages/my/fav/my_fav",
+		"projects/sharemeet/pages/news/index/news_index",
+		"projects/sharemeet/pages/news/detail/news_detail",
+		"projects/sharemeet/pages/admin/news/list/admin_news_list",
+		"projects/sharemeet/pages/admin/news/add/admin_news_add",
+		"projects/sharemeet/pages/admin/news/edit/admin_news_edit",
+		"projects/sharemeet/pages/admin/setup/about/admin_setup_about",
+		"projects/sharemeet/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/sharemeet/pages/admin/setup/qr/admin_setup_qr",
+		"projects/sharemeet/pages/admin/index/home/admin_home",
+		"projects/sharemeet/pages/admin/index/login/admin_login",
+		"projects/sharemeet/pages/admin/content/admin_content",
+		"projects/sharemeet/pages/admin/mgr/log/admin_log_list",
+		"projects/sharemeet/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/sharemeet/pages/admin/mgr/list/admin_mgr_list",
+		"projects/sharemeet/pages/admin/mgr/add/admin_mgr_add",
+		"projects/sharemeet/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/sharemeet/pages/admin/user/list/admin_user_list",
+		"projects/sharemeet/pages/admin/user/detail/admin_user_detail",
+		"projects/sharemeet/pages/admin/user/export/admin_user_export",
+		"projects/sharemeet/pages/enroll/index/enroll_index",
+		"projects/sharemeet/pages/enroll/join/enroll_join",
+		"projects/sharemeet/pages/enroll/detail/enroll_detail",
+		"projects/sharemeet/pages/enroll/my_join_list/enroll_my_join_list",
+		"projects/sharemeet/pages/enroll/my_join_detail/enroll_my_join_detail",
+		"projects/sharemeet/pages/enroll/join_edit/enroll_join_edit",
+		"projects/sharemeet/pages/enroll/calendar/enroll_calendar",
+		"projects/sharemeet/pages/admin/enroll/list/admin_enroll_list",
+		"projects/sharemeet/pages/admin/enroll/add/admin_enroll_add",
+		"projects/sharemeet/pages/admin/enroll/edit/admin_enroll_edit",
+		"projects/sharemeet/pages/admin/enroll/join_list/admin_enroll_join_list",
+		"projects/sharemeet/pages/admin/enroll/export/admin_enroll_export",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"projects/sharemeet/pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#3879C2",
+		"navigationBarTitleText": "共享会议室小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#3879C2",
+		"list": [
+			{
+				"pagePath": "projects/sharemeet/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/sharemeet/images/tabbar/home.png",
+				"selectedIconPath": "/projects/sharemeet/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/sharemeet/pages/enroll/index/enroll_index",
+				"text": "会议室",
+				"iconPath": "/projects/sharemeet/images/tabbar/enroll.png",
+				"selectedIconPath": "/projects/sharemeet/images/tabbar/enroll_cur.png"
+			},
+			{
+				"pagePath": "projects/sharemeet/pages/enroll/calendar/enroll_calendar",
+				"text": "会议日历",
+				"iconPath": "/projects/sharemeet/images/tabbar/day.png",
+				"selectedIconPath": "/projects/sharemeet/images/tabbar/day_cur.png"
+			},
+			{
+				"pagePath": "projects/sharemeet/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/sharemeet/images/tabbar/my.png",
+				"selectedIconPath": "/projects/sharemeet/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

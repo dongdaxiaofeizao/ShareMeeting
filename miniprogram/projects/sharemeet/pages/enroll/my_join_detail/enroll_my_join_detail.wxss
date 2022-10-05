@@ -1,0 +1,70 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 50rpx 70rpx;
+}
+
+.main .mid {
+	width: 100%;
+	background-image: linear-gradient(0deg, #F7E5BF, #e9c77d, #F7E5BF);
+	border-radius: 15rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	color: #895E20;
+	overflow: hidden;
+}
+
+.main .mid .top {
+	width: 100%;
+	padding: 70rpx 40rpx;
+}
+
+.main .mid .title {
+	width: 100%;
+	font-size: 45rpx;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 40rpx;
+}
+
+.main .mid .tt {
+	width: 100%;
+	font-size: 30rpx;
+	text-align: center;
+	margin-bottom: 20rpx;
+}
+
+.main .mid .clock {
+	width: 100%;
+	font-size: 32rpx;
+	text-align: center;
+	margin-bottom: 60rpx;
+}
+
+.main .mid .address {
+	width: 100%;
+	font-size: 32rpx;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50rpx;
+}
+
+.main .mid .author {
+	width: 100%;
+	font-size: 30rpx;
+	text-align: center;
+	background-color: #f3dfb3;
+	padding: 20rpx 0;
+}
+
+.main .mid .desc {
+	width: 100%;
+	font-size: 28rpx;
+	text-align: left;
+	background-color: #fff;
+	padding: 30rpx;
+	color: #666;
+}

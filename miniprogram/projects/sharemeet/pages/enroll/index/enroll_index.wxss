@@ -1,0 +1,92 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 50rpx 40rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+	border-radius: 20rpx;
+	margin-bottom: 30rpx;
+	overflow: hidden;
+}
+
+.list .item .top-line {
+	width: 100%;
+	padding: 40rpx 40rpx 10rpx;
+}
+
+.list .item .top-line .title {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.list .item .top-line .title .txt {
+	font-size: 34rpx;
+	color: #000;
+	font-weight: bold;
+	flex: 1;
+}
+
+.list .item .top-line .man-line {
+	width: 100%;
+	text-align: left;
+	font-size: 30rpx;
+	font-weight: bold;
+	padding: 20rpx 0;
+}
+
+.list .item .top-line .tag-list {
+	width: 100%;
+	margin-top: 30rpx;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.list .item .top-line .tag-list .tag-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 40rpx;
+}
+
+.list .item .top-line .tag-list .tag-item image {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.list .item .top-line .tag-list .tag-item text {
+	margin-top: 10rpx;
+	font-size: 24rpx;
+}
+
+.list .item .bottom-line {
+	margin-top: 20rpx;
+	font-size: 30rpx;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20rpx 0rpx;
+	color: #3879C2;
+	font-weight: bold;
+	letter-spacing: 3rpx;
+	background-image: linear-gradient(45deg, #F1F7FC, #D3E3F5);
+}

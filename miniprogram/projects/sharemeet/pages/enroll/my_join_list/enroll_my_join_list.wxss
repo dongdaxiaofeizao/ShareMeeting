@@ -1,0 +1,73 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 50rpx 40rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	height: 110rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+	margin-bottom: 35rpx;
+}
+
+.list .item .left {
+	width: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #68B0E2;
+	color: #fff;
+	height: inherit;
+	font-size: 40rpx;
+}
+
+.list .item .left.expire{ 
+	background-color: #D9DCDF; 
+}
+
+.list .item .mid {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 10rpx;
+}
+
+.list .item .mid .line1 {
+	width: 100%;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #000;
+}
+
+.list .item .mid .line2 {
+	font-size: 26rpx;
+	color: #999;
+	margin-top: 5rpx;
+}
+
+.list .item .right {
+	width: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #DC2626;
+	height: inherit;
+	font-size: 30rpx;
+	text-align: center;
+}

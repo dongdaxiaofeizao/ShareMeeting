@@ -1,0 +1,31 @@
+<block wx:if="{{isLoad}}">
+	<cmpt-comm-list type="my_enroll_join" search="{{search||''}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="enroll/my_join_list" isTotalMenu="{{false}}" sortMenusDefaultIndex="0" topBottom="120" placeholder="搜索标题" bind:list="bindCommListCmpt">
+
+		<view slot="searchEnd">
+
+		</view>
+
+		<!-- List Begin -->
+		<view class="main">
+			<view class="list">
+				<view class="item" wx:for="{{dataList.list}}" wx:key="index">
+					<view class="left {{item.expire?'expire':''}}"><text class="{{!item.expire?'icon-remind':'icon-roundcheckfill'}}"></text></view>
+					<view class="mid" bindtap="bindTap"  data-eid="{{item.ENROLL_JOIN_ENROLL_ID}}" data-id="{{item._id}}" >
+						<view class="line1 content-cut-one">{{item.ENROLL_JOIN_OBJ.name}}</view>
+						<view class="line2">{{item.ENROLL_JOIN_DAY_DESC}} {{item.ENROLL_JOIN_START}}~{{item.ENROLL_JOIN_END_POINT}}</view>  
+					</view>
+					<view class="right" bindtap="url" data-url="../my_join_detail/enroll_my_join_detail?id={{item._id}}">{{item.week}}</view>
+				</view>
+			</view>
+
+			<!--load begin-->
+			<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+			<!--load end-->
+
+		</view> 
+		<!-- List END -->
+
+	</cmpt-comm-list>
+
+</block>
